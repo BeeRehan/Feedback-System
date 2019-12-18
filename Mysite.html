@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <head>
+        <title>Feedback</title>
+        <link rel="icon" type="image/jpg" href="hlo.jpg">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            header {
+  background:url('heder1.png');
+  background-size:cover;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+  float: left;{
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+center{
+  background: url('headerbg.jpg');
+  background-color: none;
+  padding: 200px;
+  text-align: center;
+  color: black;
+}
+footer{
+  background-color: skyblue;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+        .summary {
+    font-size: 18:
+    
+}
+.slideshow{
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 200px;
+    background: none;
+    box-sizing: border-box;
+}
+.content{
+    margin: auto;
+    width: 190px;
+    perspective: 1000px;
+    position: relative;
+    padding-top: 80px;
+}
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    float: right;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+    
+}
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+    
+}
+content-carrousel figure{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #4d444d;
+    overflow: hidden;
+    position: absolute;   
+}
+.content-carrousel figure:nth-child(1){
+    transform: rotateY(0deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(2){
+    transform: rotateY(40deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(3){
+    transform: rotateY(80deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(4){
+    transform: rotateY(120deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(5){
+    transform: rotateY(160deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(6){
+    transform: rotateY(200deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(7){
+    transform: rotateY(240deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(8){
+    transform: rotateY(280deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(9){
+    transform: rotateY(320deg) translateZ(300px);
+}
+.shadow{
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px #000;
+    border-radius: 2px;
+}
+.content-carrousel img{
+    image-rendering:auto;
+    transition: all 300ms;
+    width: 100%;
+    height: 100%; 
+}
+.content-carrousel img:hover{
+    transform: scale(1,2);
+    transition: all 300ms;
+}
+@keyframes rotar{
+    from {
+        transform:rotateY(0deg);
+    }to{
+        transform:rotateY(320deg);
+    }
+}
+        </style>
+    </head>
+    <header>
+    <ul>     
+        <li><a href="Mysite.html">Home</a></li>
+    <li><a>Feedback</a>
+        <ul>
+            <li><a href="Login.html">IT</a></li>
+            <li><a href="elogin.html">ECE</a></li>
+            <li><a href="cslogin.html">CSE</a></li>
+            <li><a href="eelogin.html">EEE</a></li>
+            <li><a href="clogin.html">Civil</a></li>
+            <li><a href="mlogin.html">Mech</a></li>
+        </ul>
+     </li>
+    <li><a href="ad.html">Admin</a></li>
+    <li><a href="fac.html">Faculty</a></li>
+    <li><a href="Signup.html">Registration</a></li>
+    <li><a href="About.html">About us</a></li>
+    </ul>
+    </header>
+    <body>
+        <section class="slideshow">
+        <div class="content">
+            <div class="content-carrousel">
+            <figure class="shadow"><img src="1.jpg"></figure>
+             <figure class="shadow"><img src="2.jpg"></figure>
+              <figure class="shadow"><img src="3.jpg"></figure>
+               <figure class="shadow"><img src="4.jpg"></figure>
+                <figure class="shadow"><img src="5.jpg"></figure>
+                 <figure class="shadow"><img src="6.jpg"></figure>
+                  <figure class="shadow"><img src="7.jpg"></figure>
+                   <figure class="shadow"><img src="8.jpg"></figure>
+                    <figure class="shadow"><img src="9.jpg"></figure>                  
+            </div>
+        </div>    
+             
+         </section>
+         <center>  <p>The Small Group Analysis (SGA) is a method of gathering anonymous feedback from students about what is helping them learn and what is not, in a course. This service is provided by the Center for Teaching, and is an excellent way to assess students' response to your teaching mid-semester.
+
+
+
+
+		 Here we have developed the a faculty feedback system, which is generally used in the college to rate the faculty based on the performance...Here we have 2 modules such as administrator, student.
+
+Administrator is the one who creates the student account by adding all student info and assigning the username and password. 
+Admin also checks the result once all students entered the feedback..
+We can start the development from the login page, where we have given the option to login as admin and student...Here since we have only one admin account, so no need to create the a database to store admin info...so the admin username is "admin" and password is "Yasin"...select admin in the radio button and login 
+
+You can perform all admin actions such as login to the account and check result..
+
+I you entered the student user and password and selected student option, then it will show all student information and let you enter the feedback based on the subject..
+
+Before we can look into the Html&amp;php code, you need to create a database called "feed" with two tables in it..one as student and another one as take
+                        </p></center>	
+            
+    </body>
+    <footer>
+        <p> All rights are reserved by Bee Rehan&COPY;</p>
+    </footer>
+</html>
